@@ -1,0 +1,51 @@
+{
+  "name": "react-redux-rp",
+  "version": "1.0.0",
+  "description": "The awesome, declarative render props version of connect",
+  "author": "xJkit",
+  "license": "MIT",
+  "repository": "xJkit/react-redux-rp",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "test": "CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepare": "yarn run build",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "gh-pages": "^1.1.0",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "react-redux": "^5.0.0",
+    "react-scripts": "^1.1.1",
+    "redux": "^3.7.2",
+    "rollup": "^0.54.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-peer-deps-external": "^2.0.0",
+    "rollup-plugin-postcss": "^1.1.0",
+    "rollup-plugin-url": "^1.3.0"
+  },
+  "files": ["dist"]
+}
