@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import Connected from './';
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe('Connected', () => {
+  it('sanity check', () => {
+    expect(1).toBeTruthy();
+  });
+});
